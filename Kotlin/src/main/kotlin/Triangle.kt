@@ -18,7 +18,7 @@ class Triangle(
 
     fun perimeter() = a + b + c
 
-    fun area() = sqrt((perimeter() / 2) * (perimeter() / 2 - a) * (perimeter() / 2 - b) * (perimeter() / 2 - c))
+    override fun area() = sqrt((perimeter() / 2) * (perimeter() / 2 - a) * (perimeter() / 2 - b) * (perimeter() / 2 - c))
 
 
 }
