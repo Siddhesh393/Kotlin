@@ -4,8 +4,10 @@
 * */
 
 abstract class Shape(
-    protected var name: String
+    var name: String
 ) {
+
+    constructor(name: String, vararg dimensions: Double) :    this(name)
     init{
         println("Shape is the super class")
     }
@@ -14,5 +16,6 @@ abstract class Shape(
         name = newName
     }
 
+    abstract fun perimeter() : Double
     abstract fun area() : Double
 }
